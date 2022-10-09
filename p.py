@@ -5,9 +5,6 @@ import streamlit as st
 def main():
     global listen_port, buffer_size, max_conn
     try:
-        while True:
-            if st.button('start'):
-                break
         number = st.number_input('Enter a listening port: ')
         listen_port = int(number)
     except KeyboardInterrupt:
